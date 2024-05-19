@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .ghantt-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>TecchTitans ENG1 Group Project</h1>
+    </div>
+    <div id="button-container">
+        <button id="team16Button">Team 16 - Ghantt Charts</button>
+        <button id="team14Button">Team 14 - Ghantt Charts</button>
+    </div>
+    <div id="team16Charts" class="ghantt-section">
+        <h1>Weekly Ghantt Charts - Team 16</h1>
+        <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
         <div>
-            <h1>TecchTitans ENG1 Group Project</h1>
+            <h2>Week 1 Overview</h2>
+            <img class="ghantt" src="./Assets/Chantt_Charts_T16/week1.png" alt="Week 1 Ghantt Chart">
         </div>
-        <div id="button-container">
-            <a href="index.html">
-                <button id="button1">Home</button>
-            </a>
-            <a href="ghantt_chart.html">
-                <button id="button2">Ghantt Charts</button>
-            </a>
-            <a href="client_interview.html">
-                <button id="button3">Client Interview Qs</button>
-            </a>
-            <a href="architecture.html">
-                <button id="button4">Architecture Diagram</button>
-            </a>
-            <a href="crc_cards.html">
-                <button id="button5">CRC Cards</button>
-            </a>
-            <a href="code_releases.html">
-                <button id="button6">Code and Releases</button>
-            </a>
-            <a href="deliverables.html">
-                <button id="button7">Deliverables</button>
-            </a>
+        <br><br><br><br>
+        <div>
+            <h2>Week 2 Overview</h2>
+            <img class="ghantt" src="./Assets/Chantt_Charts_T16/week2.png" alt="Week 2 Ghantt Chart">
         </div>
-        <div id="ghantt_chart">
-            <h1>Weekly Ghantt Charts</h1>
-            <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
-            <div>
-                <h2>Week 1 Overview</h2>
-                <img class="ghantt" src="./Assets/Gantt_Charts/week1.png" alt="Week 1 Ghantt Chart">
-            </div>
-            <br><br><br><br>
-            <div>
-                <h2>Week 2 Overview</h2>
-                <img class="ghantt" src="./Assets/Gantt_Charts/week2.png" alt="Week 2 Ghantt Chart">
-            </div>
-            <br><br><br><br>
-            <div>
-                <h2>Week 3 Overview</h2>
-                <img class="ghantt" src="./Assets/Gantt_Charts/week3.png" alt="Week 3 Ghantt Chart">
-            </div>
-            <br><br><br><br>
-            <div>
-                <h2>Week 4 Overview</h2>
-                <img class="ghantt" src="./Assets/Gantt_Charts/week4.png" alt="Week 4 Ghantt Chart">
-            </div>
-            <br><br><br><br>
-            <div>
-                <h2>Week 5 Overview</h2>
-                <img class="ghantt" src="./Assets/Gantt_Charts/week5.png" alt="Week 5 Ghantt Chart">
-            </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 3 Overview</h2>
+            <img class="ghantt" src="./Assets/Chantt_Charts_T16/week3.png" alt="Week 3 Ghantt Chart">
         </div>
-    </body>
+        <br><br><br><br>
+        <div>
+            <h2>Week 4 Overview</h2>
+            <img class="ghantt" src="./Assets/Chantt_Charts_T16/week4.png" alt="Week 4 Ghantt Chart">
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 5 Overview</h2>
+            <img class="ghantt" src="./Assets/Chantt_Charts_T16/week5.png" alt="Week 5 Ghantt Chart">
+        </div>
+    </div>
+    <div id="team14Charts" class="ghantt-section">
+        <h1>Weekly Ghantt Charts - Team 14</h1>
+        <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
+        <div>
+            <h2>Week 1 Overview</h2>
+            <img class="ghantt" src="./Assets/Gantt_Charts/week1.png" alt="Week 1 Ghantt Chart">
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 2 Overview</h2>
+            <img class="ghantt" src="./Assets/Gantt_Charts/week2.png" alt="Week 2 Ghantt Chart">
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 3 Overview</h2>
+            <img class="ghantt" src="./Assets/Gantt_Charts/week3.png" alt="Week 3 Ghantt Chart">
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 4 Overview</h2>
+            <img class="ghantt" src="./Assets/Gantt_Charts/week4.png" alt="Week 4 Ghantt Chart">
+        </div>
+        <br><br><br><br>
+        <div>
+            <h2>Week 5 Overview</h2>
+            <img class="ghantt" src="./Assets/Gantt_Charts/week5.png" alt="Week 5 Ghantt Chart">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('team16Button').addEventListener('click', function() {
+            document.getElementById('team16Charts').style.display = 'block';
+            document.getElementById('team14Charts').style.display = 'none';
+        });
+
+        document.getElementById('team14Button').addEventListener('click', function() {
+            document.getElementById('team14Charts').style.display = 'block';
+            document.getElementById('team16Charts').style.display = 'none';
+        });
+    </script>
+</body>
 </html>
