@@ -6,6 +6,11 @@
     <title>Change Report</title>
     <link rel="stylesheet" href="./index.css">
     <style>
+        * {
+            padding: 0;
+            border: 0;
+            text-align: center;
+        }
         body {
             background-color: rgb(193,216,240);
             font-family: Arial, sans-serif;
@@ -28,9 +33,46 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
+        #button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #button-container a {
+            margin: 0 5px;
+        }
+        button {
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(70,99,172);
+            color: rgb(210,222,235);
+            border-radius: 5px;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
+    <div>
+        <h1>TecchTitans ENG1 Group Project</h1>
+    </div>
+    <div id="button-container">
+        <a href="index.html">
+            <button id="button1">Home</button>
+        </a>
+        <a href="ghantt_chart.html">
+            <button id="button2">Ghantt Charts</button>
+        </a>
+        <a href="code_releases.html">
+            <button id="button2">Code and Releases</button>
+        </a>
+        <a href="deliverables.html">
+            <button id="button1">Deliverables</button>
+        </a>
+    </div>
     <div class="container">
         <h1>Change Report</h1>
         <p><strong>Introduction:</strong></p>
@@ -39,4 +81,3 @@
     </div>
 </body>
 </html>
-
