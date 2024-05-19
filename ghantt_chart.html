@@ -9,6 +9,23 @@
         .ghantt-section {
             display: none;
         }
+        #button-container, #team-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -20,26 +37,26 @@
             <button id="button1">Home</button>
         </a>
         <a href="client_interview.html">
-            <button id="button1">Client Interview Qs</button>
+            <button id="button2">Client Interview Qs</button>
         </a>
         <a href="architecture.html">
-            <button id="button1">Architecture Diagram</button>
+            <button id="button3">Architecture Diagram</button>
         </a>
         <a href="crc_cards.html">
-            <button id="button1">CRC Cards</button>
+            <button id="button4">CRC Cards</button>
         </a>
         <a href="code_releases.html">
-            <button id="button1">Code and Releases</button>
+            <button id="button5">Code and Releases</button>
         </a>
         <a href="deliverables.html">
-            <button id="button1">Deliverables</button>
+            <button id="button6">Deliverables</button>
         </a>
     </div>
     <div id="team-buttons">
-        <button id="button2">Team 16 - Ghantt Charts</button>
-        <button id="button3">Team 14 - Ghantt Charts</button>
+        <button id="team16Button">Team 16 - Ghantt Charts</button>
+        <button id="team14Button">Team 14 - Ghantt Charts</button>
     </div>
-    <div id="button2" class="ghantt-section">
+    <div id="team16Charts" class="ghantt-section">
         <h1>Weekly Ghantt Charts - Team 16</h1>
         <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
         <div>
@@ -77,7 +94,7 @@
             <img class="ghantt" src="./Assets/Chantt_Charts_T16/week5_2.png" alt="Week 5 Ghantt Chart">
         </div>
     </div>
-    <div id="button3" class="ghantt-section">
+    <div id="team14Charts" class="ghantt-section">
         <h1>Weekly Ghantt Charts - Team 14</h1>
         <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
         <div>
