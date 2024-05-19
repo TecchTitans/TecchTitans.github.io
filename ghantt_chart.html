@@ -6,25 +6,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <style>
+        * {
+            padding: 0;
+            border: 0;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(193,216,240);
+        }
+        #plan {
+            display: block;
+            width: 70vw;
+            height: auto;
+            margin: auto;
+        }
+        .gantt_con {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            display: flex;
+            align-items: flex-start;
+        }
+        .q_label {
+            text-align: left;
+        }
+        li {
+            text-align: left;
+            margin: auto;
+            max-height: fit-content;
+            width: 50vw;
+        }
+        #questionanswer {
+            text-align: left;
+            margin: auto;
+            max-height: fit-content;
+            width: 50vw;
+            color: red;
+        }
+        .crc, .arch, .ghantt {
+            display: block;
+            margin: auto;
+            width: 70%;
+            height: auto;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+        }
+        #codelinks {
+            font-size: 30px;
+        }
+        #deliverablelink {
+            font-size: 20px;
+        }
+        #button1, #button2, #button3, #team16Button, #team14Button {
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgb(70,99,172);
+            color: rgb(210,222,235);
+            border-radius: 5px;
+            margin: 5px;
+        }
+        #container {
+            text-align: center;
+        }
         .ghantt-section {
             display: none;
-        }
-        #button-container, #team-buttons {
-            display: flex;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
@@ -34,7 +81,7 @@
     </div>
     <div id="button-container">
         <a href="index.html">
-            <button id="button0">Home</button>
+            <button id="button1">Home</button>
         </a>
         <a href="client_interview.html">
             <button id="button2">Client Interview Qs</button>
