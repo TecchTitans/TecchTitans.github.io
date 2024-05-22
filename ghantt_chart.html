@@ -62,6 +62,9 @@
             border-width: 3px;
             border-color: black;
         }
+        .ghantt-section {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +98,7 @@
         <button id="button5">Team 16 - Ghantt Charts</button>
         <button id="button6">Team 14 - Ghantt Charts</button>
     </div>
-    <div id="button5" class="ghantt-section">
+    <div id="team16Charts" class="ghantt-section">
         <h1>Weekly Ghantt Charts - Team 16</h1>
         <h3>Each week a Ghantt chart is provided to present the progress from Team 16 of the project for Assessment 1.</h3>
         <div>
@@ -133,7 +136,7 @@
             <img class="ghantt" src="./Assets/Chantt_Charts_T16/week5_2.png" alt="Week 5 Ghantt Chart">
         </div>
     </div>
-    <div id="button6" class="ghantt-section">
+    <div id="team14Charts" class="ghantt-section">
         <h1>Weekly Ghantt Charts - Team 14</h1>
         <h3>Each week a Ghantt chart is provided to present the progress of the project for Assessment 2.</h3>
         <div>
@@ -163,12 +166,12 @@
     </div>
 
     <script>
-        document.getElementById('team16Button').addEventListener('click', function() {
+        document.getElementById('button5').addEventListener('click', function() {
             document.getElementById('team16Charts').style.display = 'block';
             document.getElementById('team14Charts').style.display = 'none';
         });
 
-        document.getElementById('team14Button').addEventListener('click', function() {
+        document.getElementById('button6').addEventListener('click', function() {
             document.getElementById('team14Charts').style.display = 'block';
             document.getElementById('team16Charts').style.display = 'none';
         });
