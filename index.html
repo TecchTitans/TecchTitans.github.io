@@ -5,60 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <style>
-        * {
-            padding: 0;
-            border: 0;
-            text-align: center;
-        }
+   <style>
         body {
             background-color: rgb(193,216,240);
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-        #plan {
-            display: block;
-            width: 70vw;
-            height: auto;
+        .container {
+            max-width: 800px;
             margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .gantt_con {
-            width: fit-content;
-            height: fit-content;
-            margin: auto;
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        #button-container {
             display: flex;
-            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 20px;
         }
-        .q_label {
-            text-align: left;
+        #button-container a {
+            margin: 0 5px;
         }
-        li {
-            text-align: left;
-            margin: auto;
-            max-height: fit-content;
-            width: 50vw;
-        }
-        #questionanswer {
-            text-align: left;
-            margin: auto;
-            max-height: fit-content;
-            width: 50vw;
-            color: red;
-        }
-        .crc, .arch, .ghantt {
-            display: block;
-            margin: auto;
-            width: 70%;
-            height: auto;
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-        }
-        #codelinks {
-            font-size: 30px;
-        }
-        #deliverablelink {
-            font-size: 20px;
-        }
-        #button1, #button2, #button3, #team16Button, #team14Button {
+        button {
             width: 250px;
             height: 40px;
             font-size: 20px;
@@ -67,11 +50,17 @@
             border-radius: 5px;
             margin: 5px;
         }
-        #container {
-            text-align: center;
+        button:hover {
+            background-color: #45a049;
         }
-        .ghantt-section {
-            display: none;
+        img {
+            display: block;
+            margin: auto;
+            width: 70%;
+            height: auto;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
         }
     </style>
 </head>
@@ -82,25 +71,25 @@
   <div id="button container">
 
     <a href="index.html">
-      <button id="button2">Home</button>
+      <button id="button7">Home</button>
     </a>
     <a href="ghantt_chart.html">
-      <button id="button3">Gantt Charts</button>
+      <button id="button7">Gantt Charts</button>
     </a>
     <a href="code_releases.html">
-      <button id="button3">Code and Releases</button>
+      <button id="button7">Code and Releases</button>
     </a>
     <a href="deliverables.html">
-      <button id="button3">Deliverables</button>
+      <button id="button7">Deliverables</button>
     </a>
      <a href="changereport.html">
-     <button id="button3">Change Report</button>
+     <button id="button7">Change Report</button>
     </a>
       <a href="testing.html">
-    <button id="button3">Testing</button>
+    <button id="button7">Testing</button>
     </a>
     <a href="architecture.html">
-      <button id="button3">Architecture</button>
+      <button id="button7">Architecture</button>
     </a>
 
   </div>
