@@ -62,6 +62,9 @@
             border-width: 3px;
             border-color: black;
         }
+        .container {
+          display: none;
+        }
     </style>
 </head>
 <body>
@@ -85,14 +88,18 @@
           <button id="button7">Deliverables</button>
         </a>
         <a href="testing.html">
-          <button id="button6">Testing</button>
+          <button id="button7">Testing</button>
         </a>
         <a href="architecture.html">
           <button id="button7">Architecture</button>
         </a>
     </div>
-    <div class="container">
-        <h1>Architecture Diagrams</h1>
+    <div id="team-buttons">
+        <button id="button5">Team 16 - Architecture</button>
+        <button id="button6">Team 14 - Architecture</button>
+    </div>
+    <div id="team16Architecture" class="container">
+        <h1>Team-16 Architecture Diagrams</h1>
         <p>This architecture was designed and implemented by Team-16.</p>
         
         <h2>Initial class diagram with packages</h2>
@@ -113,5 +120,21 @@
         <h2>Player movement state diagram</h2>
         <img src="./Assets/Architecture Diagrams/state_diagram_3.PNG" alt="Player movement state diagram">
     </div>
+    <div id="team14Architecture" class="container">
+        <h1>Team-14 Architecture Diagrams</h1>
+        <p>This architecture was designed and implemented by Team-14.</p>
+    </div>
+
+    <script>
+      document.getElementById('button5').addEventListener('click', function() {
+          document.getElementById('team16Architecture').style.display = 'block';
+          document.getElementById('team14Architecture').style.display = 'none';
+      });
+
+      document.getElementById('button6').addEventListener('click', function() {
+          document.getElementById('team14Architecture').style.display = 'block';
+          document.getElementById('team16Architecture').style.display = 'none';
+      });
+  </script>
 </body>
 </html>
