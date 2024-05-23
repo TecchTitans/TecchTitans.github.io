@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"main.java.org.skloch.game"},{"l":"main.java.org.skloch.test.integration"},{"l":"main.java.org.skloch.test.unit"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"main.java.org.skloch.game"},{"l":"main.java.org.skloch.test"}]
