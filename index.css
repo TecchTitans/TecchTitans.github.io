@@ -35,7 +35,7 @@
             width: 50vw;
             color: red;
         }
-        .crc, .arch, .ghantt {
+        .crc, .arch, .ghantt, .test {
             display: block;
             margin: auto;
             width: 70%;
